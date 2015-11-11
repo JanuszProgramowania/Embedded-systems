@@ -1,0 +1,4 @@
+a7hal.o: core/a7hal.c ../../../startup/LPC2xxx.H core/../api/general.h \
+  core/../../../api/osapi.h core/../../../api/../api/general.h \
+  ../../../startup/framework.h ../../../startup/config.h
+a7hal_a.o: core/a7hal_a.S

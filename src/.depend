@@ -1,0 +1,22 @@
+main.o: main.c ../pre_emptive_os/api/osapi.h \
+  ../pre_emptive_os/api/../api/general.h ../pre_emptive_os/api/general.h \
+  ../startup/printf_P.h ../startup/config.h ../startup/consol.h \
+  ../startup/ea_init.h ../startup/lpc2xxx.h ../startup/consol.h
+charLcd.o: charLcd.c ../pre_emptive_os/api/osapi.h \
+  ../pre_emptive_os/api/../api/general.h ../pre_emptive_os/api/general.h \
+  ../startup/printf_P.h ../startup/config.h ../startup/consol.h \
+  ../startup/lpc2xxx.h ../startup/consol.h
+eeprom.o: eeprom.c ../pre_emptive_os/api/general.h i2c.h
+i2c.o: i2c.c ../pre_emptive_os/api/general.h i2c.h ../startup/lpc2xxx.h
+tempSens.o: tempSens.c ../pre_emptive_os/api/osapi.h \
+  ../pre_emptive_os/api/../api/general.h ../pre_emptive_os/api/general.h \
+  ../startup/printf_P.h ../startup/config.h ../startup/consol.h \
+  ../startup/lpc2xxx.h ../startup/consol.h eeprom.h i2c.h
+tempAdc.o: tempAdc.c ../pre_emptive_os/api/osapi.h \
+  ../pre_emptive_os/api/../api/general.h ../pre_emptive_os/api/general.h \
+  ../startup/printf_P.h ../startup/config.h ../startup/consol.h \
+  ../startup/lpc2xxx.h ../startup/consol.h ../startup/config.h
+fan.o: fan.c ../pre_emptive_os/api/osapi.h \
+  ../pre_emptive_os/api/../api/general.h ../pre_emptive_os/api/general.h \
+  ../startup/printf_P.h ../startup/config.h ../startup/consol.h \
+  ../startup/lpc2xxx.h
